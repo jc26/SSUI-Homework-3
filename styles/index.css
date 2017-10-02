@@ -1,20 +1,89 @@
-
-body{
-  text-align: center;
-  width: 40%;
-  margin: auto;
-}
-
-h1 {
-  font-family: 'Bad Script', cursive;
-  color: orangered;
-}
-
-p {
+* {
   text-align: left;
   font-family: 'Lato', sans-serif;
 }
 
-.starterImage{
-  width: 16em;
+.nav-bar {
+  width: 100%;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 30px 0 30px 0;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.nav-bar li a {
+  margin: 20px 20px;
+  float: right;
+  display: block;
+  color: black;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+.nav-bar li a.active {
+  background-color: #FAFF00;
+}
+
+.nav-bar img.logo {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  margin-left: 30px;
+}
+
+.nav-bar img.cart {
+  float: right;
+  display: inline-block;
+  width: 5%;
+  margin-left: 15px;
+  margin-right: 3%;
+}
+
+.main-body {
+  margin: 100px 30px 0 30px;
+}
+
+.main-body .main-text {
+  margin-top: -50px;
+  width: 50%;
+  float: left;
+}
+
+.main-body .main-text h1 {
+  font-size: 3.5em;
+}
+
+.main-body .main-text p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: -30px;
+}
+
+.main-body .main-img {
+  float: right;
+  width: 50%;
+}
+
+.main-body .main-img img {
+  width: 92%;
+  margin-left: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-body .main-text .button {
+  background-color: #4F72F0;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 40px;
+  cursor: pointer;
 }

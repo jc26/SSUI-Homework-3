@@ -8,16 +8,36 @@
   <link rel="stylesheet" href="styles/index.css">
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="scripts/todo.js"></script>
 </head>
 
 <body>
-  <h1>Welcome to my store!</h1>
-  <p>This store sells all kinds of items. We have old items and new items. Some items are more expensive than others.</p>
-  <img src="./resources/images/whatsInStore.png" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
-  <p>Feel free to delete this content! This is only to put down some html tags and css to get you started.</p>
+  <div class="nav-bar">
+    <div id="nav-container">
+      <ul>
+        <li><img class="logo" src="resources/images/logo_web.svg"></li>
+        <li><img class="cart" src="resources/images/cart_web.svg"></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a class="active" href="#">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-body">
+    <div class="main-text">
+      <h1>Tired of Dull <br />Pillows?</h1>
+      <p>
+        We specialize in custom decorative throw pillows. All <br />
+        pillows are handmade in our personal artisan's workshop, <br />
+        where quality and craftsmanship go hand-in-hand.
+      </p>
+      <a href="#" class="button">BROWSE</a>
+    </div>
+    <div class="main-img">
+      <img src="resources/images/women_sleeping.jpeg">
+    </div>
+  </div>
 </body>
 </html>
