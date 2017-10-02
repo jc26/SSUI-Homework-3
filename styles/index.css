@@ -15,7 +15,7 @@
   vertical-align: middle;
 }
 
-.nav-bar li a {
+.nav-bar li a.tab {
   margin: 20px 20px;
   float: right;
   display: block;
@@ -24,23 +24,24 @@
   text-decoration: none;
 }
 
-.nav-bar li a.active {
+.nav-bar li a.tab.active {
   background-color: #FAFF00;
 }
 
-.nav-bar img.logo {
+.nav-bar a img#logo {
   float: left;
   display: inline-block;
   width: 20%;
   margin-left: 30px;
 }
 
-.nav-bar img.cart {
+.nav-bar a img#cart-icon {
   float: right;
   display: inline-block;
-  width: 5%;
+  width: 3%;
   margin-left: 15px;
   margin-right: 3%;
+  margin-top: 14px;
 }
 
 .main-body {
@@ -86,4 +87,50 @@
   font-size: 13px;
   margin-top: 40px;
   cursor: pointer;
+}
+
+.main-body table.items-table {
+  border-spacing: 20px;
+  width: 104%;
+  margin-left: -20px;
+}
+
+.main-body table.items-table td {
+  width: 25%;
+  padding: 20px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+}
+
+.main-body table.items-table td img.item-img {
+  width: 100%;
+}
+
+.main-body h1#page-title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.main-body table.items-table p.item-name {
+  font-weight: 700;
+  float: left;
+  vertical-align: middle;
+  color: black;
+}
+
+.main-body table.items-table p.item-price {
+  font-size: 14px;
+  float: right;
+  vertical-align: middle;
+  padding-top: 3px;
+  color: gray;
+}
+
+.main-body table.items-table td {
+  transition: box-shadow .3s;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.main-body table.items-table td:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
