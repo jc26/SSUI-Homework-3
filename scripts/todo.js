@@ -66,10 +66,14 @@ function alertAndRedirect() {
     var quantity = document.getElementById('input-quantity').value;
     alert(quantity + " order(s) of " + document.getElementById('item-name').innerHTML +
           "(s) with a " + active + " shape have been added to your cart.");
-    var cartNum = document.getElementById('items-num');
-    var newCartNum = parseInt(cartNum.innerHTML, 10) + parseInt(quantity, 10);
-    (newCartNum > 9) ? cartNum.innerHTML = newCartNum : cartNum.innerHTML = "0" + newCartNum.toString();
+    changeCartNum(parseInt(quantity, 10));
   } else {
     alert("Please select a shape before adding item to cart.");
   }
+}
+
+function changeCartNum(increment) {
+  var cartNum = document.getElementById('items-num');
+  var newCartNum = parseInt(cartNum.innerHTML, 10) + increment;
+  (newCartNum > 9) ? cartNum.innerHTML = newCartNum : cartNum.innerHTML = "0" + newCartNum.toString();
 }

@@ -9,9 +9,6 @@
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
-
-  <!--The following line loads in your JS script-->
-  <script src="scripts/todo.js"></script>
 </head>
 
 <body>
@@ -26,13 +23,14 @@
           </a>
         </li>
         <li>
-          <a href="cart.html">
+          <a class="active-cart" href="cart.html">
+            <div id="yellow-rect"></div>
             <img id="cart-icon" src="resources/images/shopping-cart.svg">
           </a>
-          <p id="items-num">03</p>
+          <p id="items-num">04</p>
         </li>
         <li><a class="tab" href="products.html">PRODUCTS</a></li>
-        <li><a class="tab active" href="index.html">HOME</a></li>
+        <li><a class="tab" href="index.html">HOME</a></li>
       </ul>
     </div>
   </div>
@@ -40,10 +38,64 @@
 
   <!--Main Body Text-->
   <div class="main-body">
-    <h1 id="page-title">Our Shopping Cart</h1>
-
+    <h1 id="page-title">Your Shopping Cart</h1>
+    <table id="cart-table">
+      <tr id="table-head">
+        <th></th>
+        <th></th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr id="1" class="item-row">
+        <td class="x-btn">
+          <button id="1-2-btn" class="rm-btn" type="button">&times;</button>
+        </td>
+        <td class="cart-img">
+          <img class="item-img" src="resources/images/couch_pillow.JPG">
+        </td>
+        <td class="cart-name">Couch Pillow</td>
+        <td class="cart-price">$14.99</td>
+        <td class="cart-quantity">2</td>
+        <td class="cart-subtotal">$29.98</td>
+      </tr>
+      <tr id="2" class="item-row">
+        <td class="x-btn">
+          <button id="2-1-btn" class="rm-btn" type="button">&times;</button>
+        </td>
+        <td class="cart-img">
+          <img class="item-img" src="resources/images/bed_pillow.jpeg">
+        </td>
+        <td class="cart-name">Bed Pillow</td>
+        <td class="cart-price">$19.99</td>
+        <td class="cart-quantity">1</td>
+        <td class="cart-subtotal">$19.99</td>
+      </tr>
+      <tr id="3" class="item-row">
+        <td class="x-btn">
+          <button id="3-1-btn" class="rm-btn" type="button">&times;</button>
+        </td>
+        <td class="cart-img">
+          <img class="item-img" src="resources/images/floor_pouf.jpg">
+        </td>
+        <td class="cart-name">Floor Pouf Pillow</td>
+        <td class="cart-price">$25.99</td>
+        <td class="cart-quantity">1</td>
+        <td class="cart-subtotal">$25.99</td>
+      </tr>
+    </table>
+    <br />
+    <div class="total">
+      <span class="txt">Total</span> &nbsp;&nbsp;<span class="num">$75.96</span>
+    </div>
+    <a class="checkout-btn">CHECKOUT</a>
   </div>
   <!---->
 
 </body>
+
+<!-- load Javascript -->
+<script src="scripts/cart.js"></script>
+
 </html>
