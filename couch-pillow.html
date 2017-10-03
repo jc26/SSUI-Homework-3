@@ -9,9 +9,6 @@
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
-
-  <!--The following line loads in your JS script-->
-  <script src="scripts/todo.js"></script>
 </head>
 
 <body>
@@ -27,8 +24,9 @@
         </li>
         <li>
           <a href="cart.html">
-            <img id="cart-icon" src="resources/images/cart_web.svg">
+            <img id="cart-icon" src="resources/images/shopping-cart.svg">
           </a>
+          <p id="items-num">03</p>
         </li>
         <li><a class="tab" href="products.html">PRODUCTS</a></li>
         <li><a class="tab active" href="index.html">HOME</a></li>
@@ -40,14 +38,39 @@
   <!--Main Body Text-->
   <div class="main-body">
     <h1 id="page-title">Our Products</h1>
-    <div class="details-img">
-
-    </div>
-    <div class="details-info">
-      
-    </div>
+    <table class="details-table">
+      <tr>
+        <td class="details-img">
+          <img class="item-img" src="resources/images/couch_pillow.JPG">
+          <a id="add-btn" class="button">ADD TO CART</a>
+        </td>
+        <td id="details-info" class="details-info">
+          <p id="item-name" class="item-name">Couch Pillow</p>
+          <p class="item-price">$14.99</p>
+          <p class="item-quantity">Quantity</p>
+          <form class="quantity-form">
+              <input class="quantity-btn minus" type="button" value="-" />
+              <input id="input-quantity" class="quantity-fill" type="text" value="1" />
+              <input class="quantity-btn plus" type="button" value="+" />
+          </form>
+          <p class="item-shape">Shape</p>
+          <p id="square" class="shape-opt">square</p>
+          <p id="round" class="shape-opt">round</p>
+          <p id="dog" class="shape-opt">dog</p>
+          <p id="bear" class="shape-opt">bear</p>
+          <p id="bunny" class="shape-opt">bunny</p>
+          <p id="cat" class="shape-opt">cat</p>
+          <p id="custom" class="shape-opt">custom</p>
+          <br />
+        </td>
+      </tr>
+    </table>
   </div>
   <!---->
 
 </body>
+
+<!-- load Javascript -->
+<script src="scripts/todo.js"></script>
+
 </html>
