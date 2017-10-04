@@ -50,15 +50,15 @@
       </tr>
       <tr id="1" class="item-row">
         <td class="x-btn">
-          <button id="1-2-btn" class="rm-btn" type="button">&times;</button>
+          <button id="1-btn" class="rm-btn" type="button">&times;</button>
         </td>
         <td class="cart-img">
           <img class="item-img" src="resources/images/couch_pillow.JPG">
         </td>
         <td class="cart-name">Couch Pillow</td>
         <td class="cart-price">$14.99</td>
-        <td class="cart-quantity">2</td>
-        <td class="cart-subtotal">$29.98</td>
+        <td id="1-quantity" class="cart-quantity">2</td>
+        <td id="1-subtotal" class="cart-subtotal">$29.98</td>
       </tr>
       <tr id="2" class="item-row">
         <td class="x-btn">
@@ -69,8 +69,8 @@
         </td>
         <td class="cart-name">Bed Pillow</td>
         <td class="cart-price">$19.99</td>
-        <td class="cart-quantity">1</td>
-        <td class="cart-subtotal">$19.99</td>
+        <td id="2-quantity" class="cart-quantity">1</td>
+        <td id="2-subtotal" class="cart-subtotal">$19.99</td>
       </tr>
       <tr id="3" class="item-row">
         <td class="x-btn">
@@ -81,15 +81,17 @@
         </td>
         <td class="cart-name">Floor Pouf Pillow</td>
         <td class="cart-price">$25.99</td>
-        <td class="cart-quantity">1</td>
-        <td class="cart-subtotal">$25.99</td>
+        <td id="3-quantity" class="cart-quantity">1</td>
+        <td id="3-subtotal" class="cart-subtotal">$25.99</td>
       </tr>
     </table>
     <br />
-    <div class="total">
-      <span class="txt">Total</span> &nbsp;&nbsp;<span class="num">$75.96</span>
+    <div id="total-checkout">
+      <div class="total">
+        <span class="txt">Total</span> &nbsp;&nbsp;<span id="total-price" class="num">$75.96</span>
+      </div>
+      <a class="checkout-btn">CHECKOUT</a>
     </div>
-    <a class="checkout-btn">CHECKOUT</a>
   </div>
   <!---->
 
